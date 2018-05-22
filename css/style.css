@@ -1,0 +1,182 @@
+body {
+		  color: #FFFFFF;
+      background-image:     url("http://res.cloudinary.com/dk4vuo0ku/image/upload/c_scale,w_70/v1516293837/bg_uc1obm.png");
+ font-size: 20px;
+			margin: 0;
+  		}
+article {
+			width: 800px;
+			padding: 10px;
+			margin: auto;
+			background-color: rgba(255,255,255,.2); 
+}
+ 
+.italic {
+    font-style: italic;
+}
+
+h1 {
+  color: SkyBlue;
+  font-size: 50px;
+}
+
+h2 {
+  color: Skyblue;
+  text-align: center;  
+}
+
+h4 {
+  text-align: center;
+  color: #000080;
+}
+
+figure {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;  
+}
+
+p {
+  color: #000080;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #000080;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.left {
+    left: 0;
+}
+
+
+.right {
+    left: 50%;
+}
+
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #ffffff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent #ffffff;
+}
+
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #ffffff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff;
+}
+
+
+.right::after {
+    left: -16px;
+}
+
+
+.content {
+    padding: 1px 2px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 1px;
+    font-size: smaller;
+    text-align: center;
+}
+}
+
+@media all and (max-width: 600px) {
+  
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+
+  .container::before {
+    left: 60px;
+    border: medium solid #ffffff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff;
+  }
+
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+
+  .right {
+    left: 0%;
+  }
+}
